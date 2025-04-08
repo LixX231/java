@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        let x1, x2, sum;
+        x1 = parseFloat(prompt("Введите первое число", 0));
+        x2 = parseFloat(prompt("Введите второе число", 0));
+        sum = x1 + x2;
+        alert("Сумма равна = " + sum);
+        */
+        /*
+        let numInFolder, numOnPage, numPage;
+        numInFolder = parseInt(prompt("Введите кол-во фото в папке", 0));
+        numOnPage = parseInt(prompt("Введите кол-во фото на одной странице", 0));
+        numPage = Math.ceil(numInFolder/numOnPage);
+        alert(numPage);
+        */
+        let number, d1, d2, d3, d4, d5, d6;
+        number = parseInt(prompt("Введите 6-значное число "));
+        d1 = Math.floor(number / 1) % 10;// единицы
+        d2 = Math.floor(number / 10) % 10;// десятки
+        d3 = Math.floor(number / 100) % 10; //сотни
+        d4 = Math.floor(number / 1000) % 10; // тысячи
+        d5 = Math.floor(number / 10000) % 10; // десятки тысяч
+        d6 = Math.floor(number / 100000) % 10; // сотни тысяч
+        alert(d1+d2+d3+d4+d5+d6);
+
+    </script>
+</body>
+</html>
