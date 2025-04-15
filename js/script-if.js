@@ -56,14 +56,9 @@ alert("min = " + min)
     let number = parseInt(prompt("Введите двухзначное число"));
     let a = parseInt(prompt("Введите число а"))
     if(number >=10 && number <= 99){
-        let sum = 0;
-        let temp = number;
-        while(temp > 0){
-            let digit = temp % 10;
-            sum = sum + digit;
-            temp = Math.floor(temp / 10);
-        }
-
+        let firstDigit = Math.floor(number / 10);
+        let secondDigit = number % 10;
+        let sum = firstDigit + secondDigit;
         console.log("Сумма цифр " + sum);
         if(sum % 3 === 0){
             console.log("Сумма цифр кратна 3");
@@ -78,9 +73,7 @@ alert("min = " + min)
         else{
             console.log("Сумма цифр не кратна а");
         }
-        
-    }
-    else{
+    }else{
         console.log("Вы ввели не двухзначное число");
     }
 
