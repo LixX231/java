@@ -1,0 +1,30 @@
+.wrapper{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+#form-create-task{
+    width: 300px;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    padding: 15px;
+}
+.container{
+    margin: 0 auto;
+    background-color: lightblue;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 1px solid darkblue;
+    padding: 15px;
+}
+.task{
+    border: 1px solid darkblue;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.importent span::after{
+    content:  "!";
+    color: red;
+    margin-left: 5px;
+    font-weight: bold;
+}
